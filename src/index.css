@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Sora", "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Premium Custom Color Palette */
+  --color-primary: #c0c1ff;
+  --color-on-primary: #1000a9;
+  --color-primary-container: #8083ff;
+  --color-on-primary-container: #0d0096;
+  
+  --color-secondary: #ddb7ff;
+  --color-on-secondary: #490080;
+  --color-secondary-container: #6f00be;
+  --color-on-secondary-container: #d6a9ff;
+
+  --color-tertiary: #4cd7f6;
+  --color-on-tertiary: #003640;
+  --color-tertiary-container: #009eb9;
+  --color-on-tertiary-container: #002f38;
+
+  --color-surface-lowest: #060e20;
+  --color-surface-low: #131b2e;
+  --color-surface-container: #171f33;
+  --color-surface-high: #222a3d;
+  --color-surface-highest: #2d3449;
+
+  --color-on-surface-custom: #dae2fd;
+  --color-on-surface-variant-custom: #c7c4d7;
+  --color-outline-custom: #908fa0;
+}
+
+/* Base custom globals */
+body {
+  background-color: #0b1326;
+  color: #dae2fd;
+  font-family: var(--font-sans);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* Glassmorphism Classes */
+.glass-card {
+  background: rgba(23, 31, 51, 0.4);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.inner-glow {
+  box-shadow: inset 1px 1px 0px 0px rgba(255, 255, 255, 0.12);
+}
+
+/* Text Gradient Effect */
+.text-gradient {
+  background: linear-gradient(135deg, #c0c1ff 0%, #ddb7ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Floating Orb Background Accents */
+.floating-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  z-index: -1;
+  opacity: 0.18;
+  pointer-events: none;
+  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Hide scrollbar for cleaner look where needed */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

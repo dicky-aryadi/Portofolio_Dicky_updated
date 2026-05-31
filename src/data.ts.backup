@@ -1,0 +1,140 @@
+import { Project, EducationItem } from './types';
+import {
+  profileImage,
+  project_web1,
+  project_uiux1,
+  project_data1
+} from './images'
+
+export const dickyProfileImage = profileImage;
+
+export const educationList: EducationItem[] = [
+  {
+    id: 'edu-1',
+    title: 'Informatics Engineering',
+    institution: 'University of Sultan Ageng Tirtayasa',
+    period: '2022 - Present',
+    icon: 'GraduationCap',
+    color: 'primary'
+  },
+  {
+    id: 'edu-2',
+    title: 'UIUX Design & Web Development Cohorts',
+    institution: 'Infinite Learning',
+    period: 'Sep 2024 - Des 2024',
+    icon: 'Code',
+    color: 'secondary'
+  },
+  /*
+  {
+    id: 'edu-3',
+    title: 'Full-Stack Bootcamp',
+    institution: 'Advanced Engineering Labs',
+    period: '2022',
+    icon: 'CheckCircle',
+    color: 'tertiary'
+  }
+  */
+];
+
+export const projectsList: Project[] = [
+  {
+    id: 'project-web1',
+    title: 'Chiper Vault - Cryptography Web Application',
+    category: 'Web Development',
+    subCategory: '',
+    description: 'A web-based application for secure text encryption and decryption using multiple cryptographic algorithms.',
+    longDescription: 'A web-based cryptography application that allows users to encrypt and decrypt text securely using multiple cryptographic algorithms through a simple and user-friendly interface.',
+    imageUrl: project_web1,
+    demoUrl: 'https://cipher-vault-cryptography.vercel.app/',
+    githubUrl: '',
+    tools: ['Figma', 'UI Design', 'UX Research', 'HTML', 'CSS', 'Java Script', 'Collaboration'],
+    overview: {
+      background: 'Cipher Vault was developed as a web-based cryptography application to help users securely encrypt and decrypt text using multiple cryptographic algorithms through a simple and accessible interface.',
+      goals: 'The main goal of this project was to provide a simple and easy-to-use platform for encrypting and decrypting text using multiple cryptographic algorithms.',
+      problem: 'Many people still perform encryption and decryption manually, which can be time-consuming and difficult to understand. This project was created to simplify the process and make cryptography more accessible through a web-based application.'
+    },
+    details: {
+      duration: '2 Months (Apr - May 2025)',
+      role: ['UI/UX Designer', 'Front-End Developer'],
+      process: ['Research', 'Wireframing', 'Prototyping', 'Hi-Fi UI', 'Front-End Development'],
+      features: ['Text Encryption & Decryption', 'Multiple Cryptographic Algorithms', 'User-Friendly Interface', 'Real-Time Text Processing'],
+      scope: ['']
+    },
+  },
+  {
+    id: 'project-ui/ux1',
+    title: 'Artivity - Inclusive Art Foundation Platform',
+    category: 'UI/UX Design',
+    subCategory: '',
+    description: 'A UI/UX website design for showcasing artworks by children with special needs in an accessible digital gallery.',
+    longDescription: 'A user-centered website design for a foundation that showcases artworks created by children with special needs. The project focused on creating an accessible, intuitive, and visually engaging digital gallery experience for displaying paintings and artwork collections.',
+    imageUrl: project_uiux1,
+    demoUrl: 'https://www.figma.com/proto/XSPX6BUeraYX2fVuJgQujr/Artivity-Project?node-id=224-2558&t=WAmAeWUTBXhYkTCS-1&scaling=scale-down-width&content-scaling=fixed&page-id=1%3A4&starting-point-node-id=224%3A2558',
+    githubUrl: '',
+    behanceUrl: 'https://behance.net/gallery/Artivity',
+    tools: ['Figma', 'Responsive Design', 'Wireframing', 'Prototyping', 'Design Principle'],
+    overview: {
+      background: 'This project was created for a foundation that supports children with special needs by showcasing their artwork through a digital platform.',
+      goals: 'The main goal of this project was to design an accessible and user-friendly website that helps the foundation display artwork collections and share their activities with a wider audience.',
+      problem: 'The foundation needed a more organized and engaging way to showcase children’s artworks digitally, as traditional sharing methods were limited and less accessible to the public.'
+    },
+    details: {
+      duration: '2 Months (May - June 2025)',
+      role: ['UI/UX Designer'],
+      process: ['Research', 'Wireframing', 'UI Design', 'Interactive Prototyping', 'Client Feedback Iteration'],
+      features: ['Digital Artwork Gallery', 'Accessible Navigation', 'Responsive Interface', 'User-Friendly Experience'],
+      scope: ['']
+    },
+  },
+  {
+    id: 'project-data1',
+    title: 'Image Classification using CNN',
+    category: 'Data Intelligence',
+    subCategory: '',
+    description: 'Developed CNN-based image classification models for multi-class (wayang) and multi-label (movie posters) tasks using TensorFlow and Keras.',
+    longDescription: 'Developed CNN-based image classification models for multi-class (wayang recognition) and multi-label (movie poster classification) tasks using Python, TensorFlow, and Keras. Evaluated model performance using accuracy, loss, and classification metrics, while collaborating on data preprocessing, model development, and experimentation.',
+    imageUrl: project_data1,
+    demoUrl: '',
+    behanceUrl: '',
+    githubUrl: 'https://github.com/classification/multi-label',
+    tools: ['Python', 'TensorFlow', 'Keras', 'Google Colab', 'CNN', 'Error Analysisi', 'Data Analysis', 'Collaboration'],
+    overview: {
+      background: 'Image data classification is widely used in computer vision to enable machines to recognize and categorize visual content. In this project, deep learning techniques were applied to handle both cultural imagery (wayang) and complex visual patterns (movie posters).',
+      goals: 'To develop CNN-based models capable of performing multi-class and multi-label image classification with high accuracy, while improving model performance through iterative training, preprocessing, and evaluation.',
+      problem: 'Manual image classification is time-consuming, inconsistent, and not scalable, especially for diverse and multi-label datasets. There is a need for an automated system that can accurately classify images into multiple categories.'
+    },
+    details: {
+      duration: '2 Months (Nov - Dec  2023)',
+      role: ['Model & Data Contributor'],
+      process: ['Data collection, labeling & preprocessing', 'CNN model design, training & hyperparameter tuning', 'Model evaluation & iterative performance improvement', 'Collaboration & result analysis with team'],
+      features: [],
+      scope: ['Image classification using CNN', 'Multi-class classification (wayang dataset)', 'Multi-label classification (movie poster dataset)', 'Model development using Python, TensorFlow & Keras', 'Supervised image learning pipeline']
+    },
+  },
+    {
+    id: 'project-data2',
+    title: 'Indoor Positioning System (IPS) using Machine Learning',
+    category: 'Data Intelligence',
+    subCategory: '',
+    description: 'Developed a machine learning-based Indoor Positioning System (IPS) prototype for indoor location prediction in the FEB building (Floors 3–4). Involved in data processing, model implementation, and real-world testing with performance evaluation.',
+    longDescription: 'Developed a machine learning-based Indoor Positioning System (IPS) prototype to predict indoor locations in the FEB building (floors 3–4). Involved in data processing, model implementation, and real-world testing, with performance evaluation using accuracy and loss metrics in collaboration with the team.',
+    imageUrl: project_data1,
+    demoUrl: '',
+    githubUrl: 'https://github.com/ips',
+    behanceUrl: '',
+    tools: ['Python', 'Scikit-learn', 'KNN (K-Nearest Neighbors)', 'Error Analysis', 'Google Colab', 'Data Analysis', 'Collaboration'],
+    overview: {
+      background: 'Indoor Positioning Systems (IPS) are used to determine the location of objects or users in environments where GPS is unreliable, such as inside buildings. This project applies machine learning techniques to build a prototype for indoor location prediction in a multi-floor building environment.',
+      goals: 'To develop a KNN-based machine learning model capable of predicting indoor locations accurately, and to evaluate its performance in a real-world indoor environment through experimental testing.',
+      problem: 'Conventional GPS-based systems are not effective for indoor environments due to signal limitations. There is a need for an alternative approach that can accurately predict indoor positions using available spatial or sensor-based data.'
+    },
+    details: {
+      duration: '2 Months (Apr - May 2025)',
+      role: ['Model & Data Contributor'],
+      process: ['Dataset collection & preprocessing', 'Feature selection for spatial data', 'KNN model implementation', 'Training & parameter tuning', 'Evaluation using accuracy & error analysis', 'Prototype testing in real environment'],
+      features: [],
+      scope: ['Indoor location prediction using KNN', 'Spatial data analysis in FEB building (multi-floor)', 'IPS prototype development', 'Model training and evaluation']
+    },
+  }
+];

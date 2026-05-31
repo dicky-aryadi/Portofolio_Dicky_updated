@@ -1,0 +1,6 @@
+{
+  "name": "Alex Designer Portfolio",
+  "description": "Premium, dual-identity portfolio of Alex containing Informatics Engineering achievements and UI/UX creative designs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
