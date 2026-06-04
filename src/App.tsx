@@ -6,14 +6,14 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import ProjectDetail from './components/ProjectDetail';
 import Footer from './components/Footer';
-import { useProjects } from './hooks/useProjects'; // ✅ Import hook
+import { useProjects } from './hooks/useProjects';
 import { AnimatePresence, motion } from 'motion/react';
 
 export default function App() {
   const [activeSection, setActiveSection] = useState('home');
   const [activeProjectId, setActiveProjectId] = useState<string | null>(null);
 
-  // ✅ Pakai hook useProjects
+  //  Pakai hook useProjects
   const { projects, loading, error } = useProjects();
 
   // Monitor scroll height to highlight the active navbar segment
@@ -78,14 +78,14 @@ export default function App() {
     }
   };
 
-  // ✅ Cari project dari data Supabase
+  // Cari project dari data Supabase
   const activeProject = projects.find(p => p.id === activeProjectId);
 
   const triggerContactFormScroll = () => {
     handleNavigate('contact');
   };
 
-  // ✅ Loading state untuk seluruh app
+  // Loading state untuk seluruh app
   if (loading) {
     return (
       <div className="min-h-screen bg-[#0b1326] flex items-center justify-center">
@@ -97,7 +97,7 @@ export default function App() {
     );
   }
 
-  // ✅ Error state
+  // Error state
   if (error) {
     return (
       <div className="min-h-screen bg-[#0b1326] flex items-center justify-center">
@@ -118,7 +118,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-[#0b1326] relative text-on-surface-custom selection:bg-primary/30 selection:text-white">
       {/* Dynamic Background Noise/Mesh texture */}
-      <div className="absolute inset-0 bg-repeat bg-[radial-gradient(rgba(255,255,255,0.015)_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none opacity-60 z-0" />
+      <div className="absolute inset-0 bg-repeat bg-[radial-gradient(rgba(255,255,255,0.015)_1px,transparent_1px)] bg-size-[16px_16px] pointer-events-none opacity-60 z-0" />
       
       {/* Floating Header */}
       <Navbar
@@ -149,7 +149,7 @@ export default function App() {
               {/* About */}
               <About />
 
-              {/* Projects Grid - ✅ Tidak perlu kirim props, pakai hook sendiri */}
+              {/* Projects Grid */}
               <Projects onSelectProject={selectProject} />
 
               {/* Contact */}
@@ -166,7 +166,7 @@ export default function App() {
             >
               {activeProject && (
                 <ProjectDetail
-                  project={activeProject} // ✅ Data dari Supabase (via useProjects)
+                  project={activeProject}
                   onBack={() => selectProject(null)}
                   onContactClick={triggerContactFormScroll}
                 />
