@@ -129,7 +129,7 @@ export default function Contact() {
         {/* Download CV */}
         <div className="flex justify-center mb-12">
           <motion.a
-            href="https://oqfpbqwrfnojakgmydci.supabase.co/storage/v1/object/public/portofolio-assets/documents/cv.pdf"
+            href="https://oqfpbqwrfnojakgmydci.supabase.co/storage/v1/object/public/portofolio-assets/documents/CV%20Dicky%20Aryadi.pdf"
             download="Dicky-CV.pdf"
             target="_blank"
             rel="noopener noreferrer"
