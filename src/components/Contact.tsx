@@ -84,7 +84,7 @@ export default function Contact() {
             <span>LinkedIn</span>
           </motion.a>
 
-          {/* Behance - ✅ Ganti URL */}
+{/* Behance - 
           <motion.a
             href="https://behance.net/dickyaryadi" // ⚠️ GANTI dengan URL asli kamu
             target="_blank"
@@ -97,7 +97,7 @@ export default function Contact() {
             <Globe className="w-4 h-4" />
             <span>Behance</span>
           </motion.a>
-
+*/}
           {/* GitHub */}
           <motion.a
             href="https://github.com/dicky-aryadi"
@@ -126,7 +126,7 @@ export default function Contact() {
 
         </div>
 
-        {/* Download CV - ✅ SUDAH BENAR */}
+        {/* Download CV */}
         <div className="flex justify-center mb-12">
           <motion.a
             href="https://oqfpbqwrfnojakgmydci.supabase.co/storage/v1/object/public/portofolio-assets/documents/cv.pdf"
@@ -140,6 +140,23 @@ export default function Contact() {
           >
             <Download className="w-4 h-4" />
             <span>Download CV</span>
+          </motion.a>
+        </div>
+
+        {/* Download Portfolio */}
+        <div className="flex justify-center mb-12">
+          <motion.a
+            href="https://oqfpbqwrfnojakgmydci.supabase.co/storage/v1/object/public/portofolio-assets/documents/Portfolio%20Dicky%20Aryadi.pdf"
+            download="Dicky-Portfolio.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ y: -3, scale: 1.04 }}
+            whileTap={{ scale: 0.95 }}
+            transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+            className="bg-primary text-on-primary px-8 py-3.5 rounded-xl font-sans font-bold shadow-[0_0_20px_rgba(192,193,255,0.2)] hover:shadow-[0_0_30px_rgba(192,193,255,0.35)] transition-all duration-300 flex items-center gap-2"
+          >
+            <Download className="w-4 h-4" />
+            <span>Download Portfolio</span>
           </motion.a>
         </div>
 

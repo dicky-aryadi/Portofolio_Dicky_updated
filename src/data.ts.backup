@@ -13,7 +13,7 @@ export const educationList: EducationItem[] = [
     id: 'edu-1',
     title: 'Informatics Engineering',
     institution: 'University of Sultan Ageng Tirtayasa',
-    period: '2022 - Present',
+    period: '2022 - 2026',
     icon: 'GraduationCap',
     color: 'primary'
   },

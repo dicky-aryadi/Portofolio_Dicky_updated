@@ -72,7 +72,7 @@ export default function About() {
               <span className="text-tertiary">About Me</span>
             </h2>
             <p className="font-sans text-base md:text-lg text-on-surface-variant-custom mb-12 leading-relaxed">
-              Informatics Engineering student interested in web development, UI/UX design, and data analysis, with a focus on creating simple and user-friendly digital experiences.
+              An Informatics Graduate interested in web development, UI/UX design, and data analysis, with a focus on creating simple and user-friendly digital experiences.
             </p>
 
             {/* Academic Checkpoints list */}
